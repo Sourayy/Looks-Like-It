@@ -6,8 +6,22 @@ Esta versão é uma adaptação do projeto [react-sketchgame](https://github.com
 
 > 🎬 **Vídeo demonstrativo:** [▶️ Assistir ao vídeo demonstrativo](video/demonstracao.mp4?raw=true)
 
-![Tela do jogo](imgs/tela-jogo.png)
-<!-- Troque pelos seus prints/GIF. Veja a seção "Imagens" no fim deste arquivo. -->
+## Telas do jogo
+
+<p align="center">
+  <img src="imgs/TelaInicial.png" alt="Tela inicial do jogo" width="720"><br>
+  <em>Tela inicial</em>
+</p>
+
+<p align="center">
+  <img src="imgs/TeladoJogo.png" alt="Tela de uma rodada do jogo" width="720"><br>
+  <em>Rodada: o jogo pede um desenho e o tempo corre</em>
+</p>
+
+<p align="center">
+  <img src="imgs/TelaFinal.png" alt="Tela de resultado" width="720"><br>
+  <em>Tela de resultado com a pontuação</em>
+</p>
 
 ## Sumário
 
