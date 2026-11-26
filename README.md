@@ -44,7 +44,7 @@ Jogo de desenho em várias rodadas: o jogo pede um objeto, você desenha em 20 s
 
 ## Como o jogo funciona
 
-1. Na tela inicial, clique em **Play Game**.
+1. Na tela inicial, clique em **Jogar**.
 2. A cada rodada o jogo pede um desenho, por exemplo "uma estrela", e você tem **20 segundos** para desenhar.
 3. Quando o tempo acaba (ou você avança), o modelo analisa o desenho. Se ele reconhecer o objeto pedido, você ganha um ponto.
 4. Cada categoria aparece uma vez, em ordem aleatória. Com 7 categorias, o jogo tem **7 rodadas**.
@@ -131,8 +131,6 @@ Entrada 28×28×1
 ```
 
 **Dados:** desenhos do [Quick, Draw!](https://github.com/googlecreativelab/quickdraw-dataset) (versão `simplified`, em traços). Em vez de usar os bitmaps prontos, o script de treino **redesenha cada exemplo do mesmo jeito que o jogo**: mesmo tamanho de quadro, mesma espessura de traço e mesma redução para 28×28. Assim o modelo treina com imagens iguais às que vai receber de quem joga. Também há pequenas variações de tamanho, posição, rotação e espelhamento.
-
-**Resultado:** acerto de validação de **[PREENCHA COM O VALOR QUE O TREINO MOSTROU NO TERMINAL]**.
 
 **Exportação:** o script grava `model.json` e `group1-shard1of1`, o formato que o TensorFlow.js carrega.
 
