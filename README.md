@@ -4,6 +4,14 @@ Jogo de desenho em várias rodadas: o jogo pede um objeto, você desenha em 20 s
 
 Esta versão é uma adaptação do projeto [react-sketchgame](https://github.com/jv-k/react-sketchgame), de John Valai. As categorias foram trocadas por **formas geométricas, nuvem e flor** (desenhos fáceis), e o modelo de IA foi treinado de novo para elas.
 
+## Equipe
+
+- Davi Freire Zanatta
+- Gabriela Ribeiro Batista
+- Gabrielle do Carmo Assunção
+- Rayara Sousa Carvalho
+---
+
 > 🎬 **Vídeo demonstrativo:** [▶️ Assistir ao vídeo demonstrativo](video/demonstracao.mp4?raw=true)
 
 ## Telas do jogo
@@ -205,21 +213,4 @@ A **ordem** das categorias em `labels.json` precisa ser a mesma do treino. O scr
 | Mostra categorias antigas ou não carrega o modelo | Atualize com **Ctrl+Shift+R** para limpar o cache. |
 | `pip install` não acha o TensorFlow | Use o Python 3.12 no ambiente virtual do treino. |
 
-## Equipe
 
-- Davi Freire Zanatta
-- Gabriela Ribeiro Batista
-- Gabrielle do Carmo Assunção
-- Rayara Sousa Carvalho
-
-## Créditos e licença
-
-- Jogo original: [react-sketchgame](https://github.com/jv-k/react-sketchgame), de **John Valai**, licença MIT. Esta versão altera as categorias, o modelo de IA, o desenho no ar com a webcam e as mensagens em português.
-- Dados de treino: [Quick, Draw!](https://github.com/googlecreativelab/quickdraw-dataset), do Google, licença CC BY 4.0.
-- Rastreamento de mão: [MediaPipe Hands](https://developers.google.com/mediapipe), do Google, licença Apache 2.0.
-
-Este projeto é distribuído sob a licença MIT. Veja o arquivo [LICENSE](LICENSE).
-
-## Imagens
-
-Para as imagens deste README, salve prints (ou um GIF) do seu jogo na pasta `imgs/` e ajuste os nomes no topo deste arquivo. Sugestão: tela inicial, uma rodada com o desenho e a tela de resultado.
