@@ -4,7 +4,7 @@ Jogo de desenho em várias rodadas: o jogo pede um objeto, você desenha em 20 s
 
 Esta versão é uma adaptação do projeto [react-sketchgame](https://github.com/jv-k/react-sketchgame), de John Valai. As categorias foram trocadas por **formas geométricas, nuvem e flor** (desenhos fáceis), e o modelo de IA foi treinado de novo para elas.
 
-> 🎬 **Vídeo demonstrativo:** [▶️ Assistir (video/demonstracao.mp4)](video/demonstracao.mp4)
+> 🎬 **Vídeo demonstrativo:** [▶️ Assistir ao vídeo demonstrativo](video/demonstracao.mp4?raw=true)
 
 ![Tela do jogo](imgs/tela-jogo.png)
 <!-- Troque pelos seus prints/GIF. Veja a seção "Imagens" no fim deste arquivo. -->
