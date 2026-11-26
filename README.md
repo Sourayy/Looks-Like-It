@@ -2,8 +2,6 @@
 
 Jogo de desenho em várias rodadas: o jogo pede um objeto, você desenha em 20 segundos e uma rede neural tenta reconhecer o que você desenhou. Dá para desenhar com o **mouse** ou **no ar, com a webcam**, usando rastreamento de mão.
 
-Esta versão é uma adaptação do projeto [react-sketchgame](https://github.com/jv-k/react-sketchgame), de John Valai. As categorias foram trocadas por **formas geométricas, nuvem e flor** (desenhos fáceis), e o modelo de IA foi treinado de novo para elas.
-
 ## Equipe
 
 - Davi Freire Zanatta
