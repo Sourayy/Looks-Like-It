@@ -1,0 +1,16 @@
+.reflect-h {
+   transform: matrix(-1, -0, 0, 1, 0, 0);
+}
+
+.air-cursor {
+  position: absolute;
+  display: none;
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+  border: 3px solid #E07A5F;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px #fff;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}

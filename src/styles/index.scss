@@ -1,0 +1,277 @@
+// Identidade visual "Looks Like It!"
+:root {
+  --navy: #2D3142;
+  --sage: #81B29A;
+  --terracotta: #E07A5F;
+  --terracotta-ink: #B84A30; // versão mais escura, para textos e botões (contraste)
+  --cream: #F9F6F0;
+  --cream-2: #F0EBE1;
+  --gray: #6C757D;
+  --font-title: Georgia, "Times New Roman", serif;
+  --font-body: Verdana, Geneva, sans-serif;
+}
+
+html, body, #root { height: 100%; }
+
+body {
+  font-family: var(--font-body);
+  font-size: .9rem;
+  line-height: 1.6;
+  color: var(--navy);
+  background: var(--cream);
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: var(--font-title);
+  font-weight: 700;
+  color: var(--navy);
+}
+a { color: var(--terracotta-ink); }
+.text-accent { color: var(--terracotta-ink); font-weight: bold; }
+.text-muted-lli { color: var(--gray); font-size: .75rem; }
+
+// ---------- Logo ----------
+.lli-logo {
+  text-align: center;
+  margin-bottom: 1.25rem;
+  h1 {
+    margin: 0;
+    font-size: 2.1rem;
+    letter-spacing: .03em;
+    span { color: var(--terracotta); }
+  }
+  .lli-rule {
+    width: 64px; height: 3px; margin: .5rem auto 0;
+    background: var(--sage); border-radius: 2px;
+  }
+  .lli-subtitle { margin: .6rem 0 0; color: var(--gray); font-size: .8rem; }
+  &.is-large h1 { font-size: 3rem; }
+}
+
+.eyebrow {
+  font-size: .68rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  color: var(--terracotta-ink);
+  margin-bottom: .35rem;
+}
+
+// ---------- Cartões ----------
+.lli-panel {
+  background: rgba(255, 255, 255, .55);
+  border: 2px solid var(--sage);
+  border-radius: 28px;
+  padding: 1.25rem;
+  box-shadow: 0 6px 20px rgba(45, 49, 66, .07);
+}
+.lli-card {
+  background: #fff;
+  border: 2px solid var(--sage);
+  border-radius: 22px;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 3px 10px rgba(45, 49, 66, .06);
+  &.is-accent { border-color: var(--terracotta); }
+  &.is-soft { background: var(--cream-2); border-color: #D8D0BF; }
+}
+.lli-list {
+  margin: 0; padding-left: 1.2rem;
+  li { margin-bottom: .35rem; }
+  li::marker { color: var(--terracotta-ink); font-weight: bold; }
+}
+.lli-team { margin: 0; padding: 0; list-style: none; font-weight: bold; li { margin-bottom: .15rem; } }
+
+// Balão de mensagem (substitui o balão retrô)
+.lli-message {
+  background: #fff;
+  border: 2px solid var(--sage);
+  border-left: 6px solid var(--terracotta);
+  border-radius: 18px;
+  padding: .85rem 1.1rem;
+  min-height: 4.3em;
+  .typed-cursor { color: var(--terracotta); }
+}
+
+// ---------- Botões ----------
+.lli-btn {
+  font-family: var(--font-body);
+  font-size: .85rem;
+  font-weight: bold;
+  padding: .6rem 1.2rem;
+  margin-right: .5rem;
+  color: var(--navy);
+  background: #fff;
+  border: 2px solid var(--navy);
+  border-radius: 14px;
+  cursor: pointer;
+  transition: transform .12s ease, box-shadow .12s ease;
+  &:hover { transform: translateY(-1px); box-shadow: 0 4px 10px rgba(45, 49, 66, .15); }
+  &:active { transform: none; box-shadow: none; }
+  &:focus-visible { outline: 3px solid var(--sage); outline-offset: 2px; }
+  &.is-primary { background: var(--terracotta-ink); border-color: var(--terracotta-ink); color: #fff; }
+  &.is-success { background: var(--sage); border-color: var(--sage); color: var(--navy); }
+  &.is-warning { border-color: var(--terracotta); color: var(--terracotta-ink); }
+}
+a:hover { text-decoration: none; }
+
+.lli-check {
+  width: 1.1rem; height: 1.1rem; margin-right: .5rem;
+  vertical-align: middle; accent-color: var(--sage); cursor: pointer;
+}
+
+// ---------- Progresso ----------
+.lli-progress {
+  height: 14px;
+  background: var(--cream-2);
+  border-radius: 999px;
+  overflow: hidden;
+  .fill {
+    height: 100%;
+    background: var(--sage);
+    border-radius: 999px;
+    transition: width .9s linear, background-color .3s;
+    &.is-low { background: var(--terracotta); }
+  }
+}
+
+// ---------- Placar ----------
+.lli-scoreboard { margin-top: .75rem; gap: .5rem; }
+.lli-chip {
+  display: inline-block;
+  margin-right: .4rem;
+  padding: .15rem .7rem;
+  font-size: .75rem;
+  font-weight: bold;
+  border-radius: 999px;
+  border: 2px solid;
+  &.is-hit { color: #2F6B4F; background: #E6F2EB; border-color: var(--sage); }
+  &.is-miss { color: var(--terracotta-ink); background: #FBEBE6; border-color: var(--terracotta); }
+}
+.lli-dots { display: flex; gap: .35rem; }
+.lli-dot {
+  width: .8rem; height: .8rem;
+  border-radius: 50%;
+  background: var(--cream-2);
+  border: 2px solid #D8D0BF;
+  &.is-hit { background: var(--sage); border-color: var(--sage); }
+  &.is-miss { background: var(--terracotta); border-color: var(--terracotta); }
+  &.is-current { border-color: var(--navy); }
+}
+.lli-feedback {
+  margin-top: .75rem;
+  padding: .5rem .8rem;
+  font-size: .8rem;
+  border-radius: 14px;
+  border-left: 6px solid;
+  &.is-hit { color: #2F6B4F; background: #E6F2EB; border-color: var(--sage); }
+  &.is-miss { color: var(--terracotta-ink); background: #FBEBE6; border-color: var(--terracotta); }
+}
+.lli-rounds {
+  margin: 0; padding: 0; list-style: none;
+  li { margin-bottom: .25rem; }
+  .is-hit b { color: #2F6B4F; }
+  .is-miss b { color: var(--terracotta-ink); }
+}
+
+// ---------- Área de desenho ----------
+.lli-canvas-card {
+  position: relative;
+
+  width: 100%;
+  max-width: 304px;
+  aspect-ratio: 1 / 1;
+
+  margin: 0 auto;
+
+  background: #fff;
+  border: 2px solid var(--terracotta);
+  border-radius: 22px;
+  overflow: hidden;
+
+  box-shadow: 0 3px 10px rgba(45, 49, 66, 0.08);
+
+  canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.lli-aircam {
+  width: 100%;
+  max-width: 304px;
+
+  margin: 0 auto;
+
+  font-size: 0.7rem;
+  line-height: 1.7;
+
+  .lli-cam-frame {
+    position: relative;
+
+    overflow: hidden;
+
+    border: 2px solid var(--sage);
+    border-radius: 16px;
+
+    background: var(--navy);
+
+    canvas {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .lli-cam-overlay {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0.5rem;
+
+    text-align: center;
+    color: var(--cream);
+
+    background: rgba(45, 49, 66, 0.8);
+  }
+
+  ul {
+    list-style: none;
+
+    margin: 0.5rem 0 0;
+    padding: 0;
+
+    color: var(--gray);
+  }
+
+  b {
+    color: var(--navy);
+  }
+}
+
+// ---------- Resultado ----------
+.lli-score { font-family: var(--font-title); font-size: 1.8rem; font-weight: bold; }
+.lli-medal { font-size: 2.4rem; line-height: 1; }
+.lli-star {
+  position: relative; display: inline-block;
+  font-size: 2rem; line-height: 1; color: #E4DDCF;
+  .fg { position: absolute; left: 0; top: 0; overflow: hidden; white-space: nowrap; color: var(--terracotta); }
+}
+
+// ---------- Diálogo ----------
+dialog.lli-dialog {
+  border: 2px solid var(--terracotta);
+  border-radius: 24px;
+  padding: 1.5rem;
+  color: var(--navy);
+  background: var(--cream);
+  box-shadow: 0 12px 40px rgba(45, 49, 66, .3);
+  max-width: 90vw;
+  &::backdrop { background: rgba(45, 49, 66, .5); }
+  p { font-family: var(--font-title); font-weight: bold; font-size: 1.1rem; }
+  menu { margin: 1rem 0 0; padding: 0; display: flex; justify-content: flex-end; }
+}

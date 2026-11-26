@@ -1,0 +1,13 @@
+# dependências e build
+node_modules
+/build
+
+# Python (treino do modelo)
+treino/.venv/
+treino/saida/
+__pycache__/
+*.npy
+
+# sistema e editor
+.DS_Store
+react-sketchgame.code-workspace
