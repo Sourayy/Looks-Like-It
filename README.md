@@ -12,6 +12,10 @@ Jogo de desenho em várias rodadas: o jogo pede um objeto, você desenha em 20 s
 
 > 🎬 **Vídeo demonstrativo:** [▶️ Assistir ao vídeo demonstrativo](video/demonstracao.mp4?raw=true)
 
+<video width="100%" controls>
+  <source src="video/demonstracao.mp4?raw=true" type="video/mp4">
+</video>
+
 ## Telas do jogo
 
 <p align="center">
